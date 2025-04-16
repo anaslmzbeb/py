@@ -1,1 +1,2 @@
-Invoke-WebRequest -Uri https://aka.ms/wsl-ubuntu-2004 -OutFile Ubuntu.appx -UseBasicParsingInvoke-WebRequest -Uri https://aka.ms/wsl-ubuntu-2004 -OutFile Ubuntu.appx -UseBasicParsing
+mkdir C:\UbuntuExtracted
+Expand-AppxPackage -PackagePath "C:\Path\To\Your\Ubuntu_*.appxbundle" -DestinationPath "C:\UbuntuExtracted"
