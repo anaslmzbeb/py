@@ -17,9 +17,9 @@ import aiohttp                       # For our API Requests
 import random                        # Random.randint(1,6) will be used in the random_color() function!
 
 buyers  = [1, 2, 3]              # Replace digits with Discord USER-IDs!
-admins  = [1, 2, 3]              # Replace digits with Discord USER-IDs! (admins!!)
-owners  = [1046461397808197762]              # Replace digits with Discord USER-IDs! (owners, they cannot be removed!!)
-token   = 'your_token_lol'                  # Discord Bot token
+admins  = [1028272061069676605, 1179535074140626987, 3]              # Replace digits with Discord USER-IDs! (admins!!)
+owners  = [1028272061069676605]              # Replace digits with Discord USER-IDs! (owners, they cannot be removed!!)
+token   = 'MTM2NTkwMjk0ODg1NjYyNzM1MQ.GDIt76.1wdB89dIi1PQlZUnU0gFd_nuGBJtISTWTLluag'                  # Discord Bot token
 bot = commands.Bot(command_prefix = '!', intents= discord.Intents.all())
 
 # This is our function to give embeds a random color!
