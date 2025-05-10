@@ -802,8 +802,11 @@ int main() {
     // We call the main logic function. Any unhandled errors would terminate.
     // Daemonize first if desired (uncomment the line below)
     // daemonize();
-    // Run in background
     daemonize();
+
+    
+    // Run in background
+    
 
     main_logic();
 
